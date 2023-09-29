@@ -1,18 +1,17 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import './style.css';
-import Registration from './components/Registration/Registration';
+import React from "react";
+import { createRoot } from "react-dom/client";
+import "./style.css";
+import Registration from "./components/Registration/Registration";
 
 const App = () => {
   return (
     <div className="container">
-      <header> 
+      <header>
         <h1>REGISTRATION</h1>
         <div className="logo" />
       </header>
       <main>
-      <Registration/>
-        
+        <Registration />
       </main>
       <footer>
         <p>Tereza Ettlerová - Czechitas React 2023 </p>
@@ -21,6 +20,4 @@ const App = () => {
   );
 };
 
-createRoot(
-  document.querySelector('#app'),
-).render(<App />);
+createRoot(document.querySelector("#app")).render(<App />);

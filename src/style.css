@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
 }
 body {
-  background-color: #EDECF1;
+  background-color: #edecf1;
 }
 
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1 {
-  color:#4E6376 ;
+  color: #4e6376;
   margin-bottom: 50px;
 }
 .container {
@@ -37,7 +37,6 @@ header {
   top: 70px;
   background-color: transparent;
 }
-
 
 footer {
   font-size: xx-small;
