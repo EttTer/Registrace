@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./Registration.css";
 
 const Registration = () => {
   const [user, setUser] = useState({
@@ -10,27 +11,35 @@ const Registration = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setUser({
-      ...user,
+    setUser(prevUser => ({
+      ...prevUser,
       [name]: value,
-    });
-
+    }));
+  
     if (name === 'email' && !user.username && value.includes('@')) {
       const usernameFromEmail = value.split('@')[0];
-      setUser({
-        ...user,
+      setUser(prevUser => ({
+        ...prevUser,
         username: usernameFromEmail,
-      });
+      }));
     }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(user); // Vypíše stavový objekt do konzole
+    console.log(user); // Vypíše do konzole
+  
+    // Resetování hodnot v polích po submit
+    setUser({
+      username: '',
+      email: '',
+      password: '',
+      passwordConfirm: '',
+    });
   };
 
   return (
-    <div>
+    <div className='container_form'>
       <form onSubmit={handleSubmit}>
         <div>
           <label>Username</label>

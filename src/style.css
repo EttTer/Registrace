@@ -3,6 +3,9 @@
 * {
   box-sizing: border-box;
 }
+body {
+  background-color: #EDECF1;
+}
 
 html {
   font-family: 'Open Sans', sans-serif;
@@ -24,6 +27,6 @@ header {
 .logo {
   width: 10rem;
   height: 10rem;
-  background-image: url(./img/rocket.svg);
+  background-image: url(./img/registration.svg);
   background-size: contain;
 }

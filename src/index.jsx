@@ -6,9 +6,10 @@ import Registration from './components/Registration/Registration';
 const App = () => {
   return (
     <div className="container">
-      <header>
+      <header> 
+        <h1>Registrace</h1>
         <div className="logo" />
-        <h1>Webová aplikace</h1>
+       
       </header>
       <main>
       <Registration/>
