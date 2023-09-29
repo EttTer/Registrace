@@ -11,6 +11,10 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+  color:#4E6376 ;
+  margin-bottom: 50px;
+}
 .container {
   max-width: 26rem;
   margin-right: auto;
@@ -21,12 +25,20 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 10px;
 }
 
 .logo {
   width: 10rem;
   height: 10rem;
-  background-image: url(./img/registration.svg);
+  background-image: url(./img/registration.png);
   background-size: contain;
+  position: absolute;
+  top: 70px;
+  background-color: transparent;
+}
+
+
+footer {
+  font-size: xx-small;
 }

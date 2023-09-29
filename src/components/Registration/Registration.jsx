@@ -40,44 +40,46 @@ const Registration = () => {
 
   return (
     <div className='container_form'>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Username</label>
-          <input
-            type="text"
-            name="username"
-            value={user.username}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <label>Email</label>
-          <input
+      <form className= 'form' onSubmit={handleSubmit}> 
+      
+      <div className='form_row'>
+          <input className='input'
+          placeholder='Email'
             type="email"
             name="email"
             value={user.email}
             onChange={handleChange}
           />
         </div>
-        <div>
-          <label>Password</label>
-          <input
+        <div className='form_row'>
+          <input className='input'
+          placeholder='User Name'
+            type="text"
+            name="username"
+            value={user.username}
+            onChange={handleChange}
+          />
+        </div>
+       
+        <div className='form_row'>
+          <input className='input'
+            placeholder='Password'
             type="password"
             name="password"
             value={user.password}
             onChange={handleChange}
           />
         </div>
-        <div>
-          <label>Confirm Password</label>
-          <input
+        <div className='form_row'>
+          <input className='input'
+          placeholder='Confirm Password'
             type="password"
             name="passwordConfirm"
             value={user.passwordConfirm}
             onChange={handleChange}
           />
         </div>
-        <button type="submit">Register</button>
+        <button className= "registration_button" type="submit">REGISTER</button>
       </form>
     </div>
   );

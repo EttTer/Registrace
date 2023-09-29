@@ -7,16 +7,15 @@ const App = () => {
   return (
     <div className="container">
       <header> 
-        <h1>Registrace</h1>
+        <h1>REGISTRATION</h1>
         <div className="logo" />
-       
       </header>
       <main>
       <Registration/>
         
       </main>
       <footer>
-        <p>Czechitas, Digitální akademie: Web</p>
+        <p>Tereza Ettlerová - Czechitas React 2023 </p>
       </footer>
     </div>
   );
